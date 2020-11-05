@@ -6,7 +6,7 @@ module.exports = merge(common, {
   mode: "production",
   output: {
     filename: "[name].min.js",
-    path: path.resolve(__dirname, "../wwwroot/lib"),
-    publicPath: '/lib/',
+    path: path.resolve(__dirname, "./build/prod"),
+    publicPath: '',
   },
 });

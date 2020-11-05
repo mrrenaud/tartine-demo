@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { Widget, addResponseMessage } from "react-chat-widget";
+import { Widget, addResponseMessage, toggleWidget } from "react-chat-widget";
 import "react-chat-widget/lib/styles.css";
 
 interface WebChatProps {
@@ -12,6 +12,7 @@ const WebChat = (props: WebChatProps) => {
     if (props.username) {
       addResponseMessage(`Bonjour ${props.username} !`);
       addResponseMessage(`Super cool ce composant.`);
+      toggleWidget();
     }
   }, []);
 
